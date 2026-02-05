@@ -34,54 +34,58 @@ A standalone dashboard for ranking and evaluating candidates for a Recycling Pro
 ├── index.html             # App entry HTML
 ├── package.json           # Dependencies
 └── vite.config.js         # Vite configuration
+```
+## ⚙️ Setup Instructions
+  1. Frontend Setup
+    Navigate to the project directory:
 
-⚙️ Setup Instructions
-1. Frontend Setup
-Navigate to the project directory:
+    Bash
+    cd recycling-project
 
-Bash
+  Install the required dependencies:
 
-cd recycling-project
-Install the required dependencies:
+    Bash
+    npm install
 
-Bash
+  Start the development server:
 
-npm install
-Start the development server:
+    Bash
+    npm run dev
 
-Bash
+  Open your browser and navigate to the local URL provided (usually http://localhost:5173).
 
-npm run dev
-Open your browser and navigate to the local URL provided (usually http://localhost:5173).
+  2. Database Setup (Optional)
+      If you wish to run the SQL backend:
+      
+      Open your MySQL client (e.g., Workbench).
+     
+      Create a new database named recycling_db.
+      
+      Import the schema:
+      Run the script in database/schema.sql.
+      
+      Load the data:
+      Run the script in database/sample_data.sql.
 
-2. Database Setup (Optional)
-If you wish to run the SQL backend:
+## 📊 Usage
 
-Open your MySQL client (e.g., Workbench).
+  Leaderboard: The dashboard automatically ranks the top 10 candidates based on their total average score.
+  
+  
+  Candidate Cards: Scroll down to view detailed cards for all 40 candidates.
+  
+  
+  Skill Heatmap: Visual progress bars indicate proficiency in Crisis Management, Sustainability, and Team Motivation.
 
-Create a new database named recycling_db.
+## 📝 Evaluation Criteria Met
 
-Import the schema:
-
-Run the script in database/schema.sql.
-
-Load the data:
-
-Run the script in database/sample_data.sql.
-
-📊 Usage
-Leaderboard: The dashboard automatically ranks the top 10 candidates based on their total average score.
-
-Candidate Cards: Scroll down to view detailed cards for all 40 candidates.
-
-
-Skill Heatmap: Visual progress bars indicate proficiency in Crisis Management, Sustainability, and Team Motivation.
-
-📝 Evaluation Criteria Met
-Database Design: Efficient schema with foreign keys and indexes.
-
-AI Prompting: Creativity and depth in scoring rubrics.
-
-Dashboard: Usability and visual clarity using Mantine UI.
-
-Random Data: Realistic profiles generated via code.
+  Database Design: Efficient schema with foreign keys and indexes.
+  
+  
+  AI Prompting: Creativity and depth in scoring rubrics.
+  
+  
+  Dashboard: Usability and visual clarity using Mantine UI.
+  
+  
+  Random Data: Realistic profiles generated via code.
